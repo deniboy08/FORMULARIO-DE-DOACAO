@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Banco de doações</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário doações</h1>
+        <h5>Preencha o formulário e aguarde uma doação de natal</h5>
+    </header>
+
+    <section>
+
+        <form class="container" action="">
+            <div class="dados">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="nome">Nome completo:
+                    </label>
+                    <input type="text" id="nome">
+
+                    <label>Sexo:<br>
+                        <select name="sexo">
+                            <option value="1">Selecione</option>
+                            <option value="2">Masculino</option>
+                            <option value="3">Feminino</option>
+                            <option value="4">Prefiro não dizer</option>
+                            <option value="5">Outro</option>
+                        </select>
+                    </label>
+
+                    <label for="data">Data de Nascimento:
+                    </label>
+                    <input type="date" id="data">
+
+                    <label for="tel">Telefone:
+                    </label>
+                    <input type="tel" id="tel">
+
+                    <div class="lblTittle">Possui whatsapp?</div>
+                    <div class="lbl">
+                        <label for="sim">Sim
+                            <input type="radio" id="sim" value="sim" name="opcao">
+                        </label>
+
+                        <label for="nao">Não<br>
+                            <input type="radio" id="nao" value="nao" name="opcao">
+                        </label>
+
+                    </div>
+
+                    <label for="end">Endereço:
+                    </label>
+                    <input type="text" id="end">
+
+                    <label for="cep">Cep:
+                    </label>
+                    <input type="text" id="cep">
+
+                </fieldset>
+                <fieldset>
+                    <legend>Dados relevantes para a doação</legend>
+                    <label>Preferência de doação:<br>
+                        <select name="categoria">
+                            <option value="1">Livros</option>
+                            <option value="2">Roupas</option>
+                            <option value="3">Calçados</option>
+                            <option value="4">Brinquedos</option>
+                            <option value="5">Eletrônicos</option>
+                        </select>
+                    </label>
+
+                    <div class="lblTittle">Se importaria em receber um presente de categoria diferente?</div>
+                    <div class="lbl">
+                        <label for="sim">Sim<br>
+                            <input type="radio" id="sim" value="sim" name="opcao">
+                        </label>
+                        <label for="nao">Não<br>
+                            <input type="radio" id="nao" value="nao" name="opcao">
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+
+            </div>
+            <div class="contato">
+
+                <fieldset>
+                    <legend>Contate-nos</legend>
+                    <label>Motivo do contato<br>
+                        <select name="categoria">
+                            <option value="1">Elogio</option>
+                            <option value="2">Sugestão</option>
+                            <option value="3">Reclamação</option>
+                        </select>
+                    </label>
+
+                    <label for="nomeContato">Nome
+                    </label>
+                    <input type="text" id="nomeContato">
+
+                    <div class="lblTittle">Como deseja ser contactado?</div>
+                    <div class="lbl cont">
+                        <label for="whatsapp">Whatsapp<br>
+                            <input type="radio" id="whatsapp" value="whatsapp" name="opcao">
+                        </label>
+                        <label for="email">Email<br>
+                            <input type="radio" id="email" value="email" name="opcao">
+                        </label>
+                        <label for="nenhum">Não desejo receber retorno<br>
+                            <input type="radio" id="nenhum" value="nenhum" name="opcao">
+                        </label>
+                    </div>
+
+
+                    <label for="contato">Dados de contato
+                    </label>
+                    <input type="text" id="contato" placeholder="Digite o celular ou email">
+
+                    <label for="conte-nos">Detalhamento
+                    </label>
+                    <textarea type="text" id="conte-nos" placeholder="Conte-nos um pouco mais..."></textarea>
+
+                </fieldset>
+
+                <button type="submit">Enviar e-mail</button>
+
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <label class="termo">
+            <input type="checkbox" id="termo" />
+            Estou de acordo com o compartilhamento de meus dados com o site
+        </label>
+
+        <div class="copyright">
+            <div>® Copyright Deniboy</div>
+            <div id="current_date">
+                <script>
+                    let d = new Date();
+                    d.setDate(d.getDate());
+                    let dataFormatada = `${d.getFullYear()}`;
+                    document.getElementById('current_date').innerHTML = dataFormatada;
+                </script>
+            </div>
+
+    </footer>
+</body>
+
+</html>
